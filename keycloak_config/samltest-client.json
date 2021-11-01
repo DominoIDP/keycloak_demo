@@ -1,0 +1,73 @@
+{
+  "clientId" : "https://samltest.id/saml/sp",
+  "enabled" : true,
+  "clientAuthenticatorType" : "client-secret",
+  "redirectUris" : [ "https://samltest.id/Shibboleth.sso/SAML2/Artifact", "https://samltest.id/Shibboleth.sso/SAML2/ECP", "https://samltest.id/Shibboleth.sso/SAML2/POST" ],
+  "webOrigins" : [ "https://samltest.id" ],
+  "protocol" : "saml",
+  "attributes" : {
+    "saml.force.post.binding" : "true",
+    "saml_single_logout_service_url_post" : "https://samltest.id/Shibboleth.sso/SLO/POST",
+    "saml.encrypt" : "true",
+    "saml_artifact_resolution_service_url" : "https://samltest.id/Shibboleth.sso/Artifact/SOAP",
+    "saml_assertion_consumer_url_post" : "https://samltest.id/Shibboleth.sso/SAML2/POST",
+    "saml.server.signature" : "true",
+    "saml.server.signature.keyinfo.ext" : "false",
+    "saml.signing.certificate" : "MIIERTCCAq2gAwIBAgIJAKmtzjCD1+tqMA0GCSqGSIb3DQEBCwUAMDUxMzAxBgNVBAMTKmlwLTE3Mi0zMS0yOC02NC51cy13ZXN0LTIuY29tcHV0ZS5pbnRlcm5hbDAeFw0xODA4MTgyMzI0MjNaFw0yODA4MTUyMzI0MjNaMDUxMzAxBgNVBAMTKmlwLTE3Mi0zMS0yOC02NC51cy13ZXN0LTIuY29tcHV0ZS5pbnRlcm5hbDCCAaIwDQYJKoZIhvcNAQEBBQADggGPADCCAYoCggGBALhUlY3SkIOze+l8y6dBzM6p7B8OykJWlwizszU16Lih8D7KLhNJfahoVxbPxB3YFM/81PJLOeK2krvJ5zY6CJyQY3sPQAkZKI7I8qq9lmZ2g4QPqybNstXS6YUXJNUt/ixbbK/N97+LKTiSutbD1J7AoFnouMuLjlhN5VRZ43jez4xLSHVZaYuUFKn01Y9oLKbj46LQnZnJCAGpTgPqEQJr6GpVGw43bKyUpGoaPrdDRgRgtPMUWgFDkgcI3QiV1lsKfBs1t1E2UA7ACFnlJZpEuBtwgivzo3VeitiSaF3Jxh25EY5/vABpcgQQRz3RH2l8MMKdRsxb8VT3yh2S+CX55s+cN67LiCPr6f2u+KS1iKfB9mWN6o2S4lcmo82HIBbsuXJV0oA1HrGMyyc4Y9nng/I8iuAp8or1JrWRHQ+8NzO85DWK0rtvtLPxkvw0HK32glyuOP/9F05Z7+tiVIgn67buC0EdoUm1RSpibqmB1ST2PikslOlVbJuy4Ah93wIDAQABo1gwVjA1BgNVHREELjAsgippcC0xNzItMzEtMjgtNjQudXMtd2VzdC0yLmNvbXB1dGUuaW50ZXJuYWwwHQYDVR0OBBYEFAdsTxYfulJ5yunYtgYJHC9IcevzMA0GCSqGSIb3DQEBCwUAA4IBgQB3J6i7KreiHL8NPMglfWLHk1PZOgvIEEpKL+GRebvcbyqgcuc3VVPylq70VvGqhJxp1q/mzLfraUiypzfWFGm9zfwIg0H5TqRZYEPTvgIhIICjaDWRwZBDJG8D5G/KoV60DlUG0crPBlIuCCr/SRa5ZoDQqvucTfr3Rx4Ha6koXFSjoSXllR+jn4GnInhm/WH137a+v35PUcffNxfuehoGn6i4YeXF3cwJK4e35cOFW+dLbnaLk+Ty7HOGvpw86h979C6mJ9qEHYgq9rQyzlSPbLZGZSgVcIezunOaOsWm81BsXRNNJjzHGCqKf8RMhd8oZP55+2/SVRBwnkGyUNCuDPrJcymC95ZT2NW/KeWkz28HF2i31xQmecT2r3lQRSM8acvOXQsNEDCDvJvCzJT9c2AnsnO24r6arPXs/UWAxOI+MjclXPLkLD6uTHV+Oo8XZ7bOjegD5hL6/bKUWnNMurQNGrmi/jvqsCFLDKftl7ajuxKjtodnSuwhoY7NQy8=",
+    "saml.artifact.binding.identifier" : "ELN98XUSisVUt9Nk/+L4tRdzdeE=",
+    "saml_single_logout_service_url_redirect" : "https://samltest.id/Shibboleth.sso/SLO/Redirect",
+    "saml.signature.algorithm" : "RSA_SHA256",
+    "saml_force_name_id_format" : "false",
+    "saml.client.signature" : "true",
+    "saml.encryption.certificate" : "MIIERTCCAq2gAwIBAgIJAKGA/tV7hXUvMA0GCSqGSIb3DQEBCwUAMDUxMzAxBgNVBAMTKmlwLTE3Mi0zMS0yOC02NC51cy13ZXN0LTIuY29tcHV0ZS5pbnRlcm5hbDAeFw0xODA4MTgyMzI0MjVaFw0yODA4MTUyMzI0MjVaMDUxMzAxBgNVBAMTKmlwLTE3Mi0zMS0yOC02NC51cy13ZXN0LTIuY29tcHV0ZS5pbnRlcm5hbDCCAaIwDQYJKoZIhvcNAQEBBQADggGPADCCAYoCggGBANoi7TtbPz5DD5b+pGj2bWHUWcOm135Dl+kfKWcJV6x4Z4VRMa33nwSfFg6U0DhPaA6rYr8BfcmCIY4V4cGlJkLNsYbgbZNnrLh23mj7jkaUeyv/DlGtLBcqr0gP6eDtcOf3MMGAkhROcicMj6i+uF6hqLDh4eNcpqEVDVn+ADBsosIPiAx+RkcyZkfAF3UeGEV5WTSiQw7qYpI7x+c4ViiBzV4waBgXjvNN72Dqlc01AylpmMKaUPfxIpPC+Ctr0bHu5xn7NxMS8Zt5NDWsP9T15qrpYatW68sXVyE5nJRYpiRiRbo8i7QpUEya+TkXEI8PVD3KBw9UwhqL8qPPe0T+EeaawF6BVRTEPc+Mn4lGBr4cCFcGk/PLHeyksgPdjNmO1g7y5TWQzu21WzkXRTWJq7wGwWeW6NrcNqweYPLbXEo0JlmHqunkUs+NsLQAFqSPX02P2xzkA/eOU2o/jN4jAPNpzqxJouvmiWGXl8Qy4U7vQZ0tGvlTDSltATOQ/QIDAQABo1gwVjA1BgNVHREELjAsgippcC0xNzItMzEtMjgtNjQudXMtd2VzdC0yLmNvbXB1dGUuaW50ZXJuYWwwHQYDVR0OBBYEFBBtS9YNKSIwViH37GJCTxjNBzLAMA0GCSqGSIb3DQEBCwUAA4IBgQDWXcaI7zMnhGsLVTUA6dgzZCa88QkN/Z6n7lCY2oaKj1neBAWA1Mxg7GBJsmLOrHN8ie0D/uKAF+7NqKCXYqd0PpTX7c1NICL92DvbugG/Ow50j5Dw6rU4Y8dPS7Y/T1ddbT2F9/5lHCIWP/O2E9HREJ0JAIbu/Mi0CE1qui2aSJMDWKuiGK63M/7fvP51m6xSJOfZBhmjgllIwEhIzfh4hVPhH0C7iqVls34UyLCZ8IZOCuGPJyTaJN6Pi3Uo1Otkz/1igN5MpQhVaeYG7SMgha6skTLrVXTt4CuMVsOZ6cG3kHqw8XZoRld+I50iyHqansf5qwzmNoPeXyjGRFQzV/EH3SUu8eAISTt9pfirwjKsVNHrmMRnQEB/hJYYbTWSsvdS8ghw7a/A0EKQPVaZGCP/hcpt9JMMb66y2L8VgBbb6aTsR+Uabf6aiMnj1UBMUz9yaMkakKM7e66uHdXUDZ/s8F5rPOGCK+O8O6EsLRf8XetRWLa1TXRDkJZVPX4=",
+    "saml.authnstatement" : "true",
+    "saml_name_id_format" : "username",
+    "saml_artifact_binding_url" : "https://samltest.id/Shibboleth.sso/SAML2/Artifact",
+    "saml_signature_canonicalization_method" : "http://www.w3.org/2001/10/xml-exc-c14n#"
+  },
+  "protocolMappers" : [ {
+    "name" : "sn",
+    "protocol" : "saml",
+    "protocolMapper" : "saml-user-property-mapper",
+    "consentRequired" : false,
+    "config" : {
+      "attribute.nameformat" : "URI Reference",
+      "user.attribute" : "lastName",
+      "friendly.name" : "sn",
+      "attribute.name" : "urn:oid:2.5.4.4"
+    }
+  }, {
+    "name" : "uid",
+    "protocol" : "saml",
+    "protocolMapper" : "saml-user-property-mapper",
+    "consentRequired" : false,
+    "config" : {
+      "attribute.nameformat" : "URI Reference",
+      "user.attribute" : "username",
+      "friendly.name" : "uid",
+      "attribute.name" : "urn:oid:0.9.2342.19200300.100.1.1"
+    }
+  }, {
+    "name" : "mail",
+    "protocol" : "saml",
+    "protocolMapper" : "saml-user-property-mapper",
+    "consentRequired" : false,
+    "config" : {
+      "attribute.nameformat" : "URI Reference",
+      "user.attribute" : "email",
+      "friendly.name" : "mail",
+      "attribute.name" : "urn:oid:0.9.2342.19200300.100.1.3"
+    }
+  }, {
+    "name" : "givenName",
+    "protocol" : "saml",
+    "protocolMapper" : "saml-user-property-mapper",
+    "consentRequired" : false,
+    "config" : {
+      "attribute.nameformat" : "URI Reference",
+      "user.attribute" : "firstName",
+      "friendly.name" : "givenName",
+      "attribute.name" : "urn:oid:2.5.4.42"
+    }
+  } ]
+}

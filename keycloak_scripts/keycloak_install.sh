@@ -40,9 +40,14 @@ sleep 10
 
 /opt/keycloak/bin/kcadm.sh update realms/master -s sslRequired=NONE
 
-/opt/keycloak/bin/kcadm.sh create realms -s realm=local -s enabled=true -o
-/opt/keycloak/bin/kcadm.sh create users -s username=localuser -s enabled=true -r local
-/opt/keycloak/bin/kcadm.sh set-password -r local --username localuser -p localpass
+LOCAL_REALM=local-$(echo $RANDOM)
+/opt/keycloak/bin/kcadm.sh create realms -s realm=$LOCAL_REALM -s enabled=true -o
+/opt/keycloak/bin/kcadm.sh create users -s username=localuser -s enabled=true -s email=localuser@local.domain -s firstName=Local -s lastName=User -r $LOCAL_REALM
+/opt/keycloak/bin/kcadm.sh set-password -r $LOCAL_REALM --username localuser -p localpass
+/opt/keycloak/bin/kcadm.sh create clients -r $LOCAL_REALM -f /tmp/keycloak_config/samltest-client.json
 
-/opt/keycloak/bin/kcadm.sh create realms -s realm=domino -s enabled=true -o
+
+DOMINO_REALM=domino-$(echo $RANDOM)
+/opt/keycloak/bin/kcadm.sh create realms -s realm=$DOMINO_REALM -s enabled=true -o
+/opt/keycloak/bin/kcadm.sh create clients -r $DOMINO_REALM -f /tmp/keycloak_config/samltest-client.json
 
