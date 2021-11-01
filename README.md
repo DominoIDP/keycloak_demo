@@ -75,8 +75,8 @@ In both realms, a client for the samltest.id SP test service is created,
 releasing the username, email address, and first/last names as attributes.
 
 
-Proof of Concept addition configuration
----------------------------------------
+Proof of Concept additional configuration
+-----------------------------------------
 
 Some additional configuration is necessary to complete the integration between
 keycloak, the domino idp, and samltest before proceeding to interoperability
