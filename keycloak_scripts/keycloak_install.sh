@@ -33,7 +33,13 @@ systemctl daemon-reload
 systemctl enable keycloak
 systemctl start keycloak
 
-sleep 10
+STATUS=1
+while [ $STATUS -ne 0 ] ; do
+	echo "Waiting for keycloak service to initialize..."
+	sleep 1;
+	curl --connect-timeout 1 -m 1 -Iso /dev/null http://localhost:$HTTP_PORT/auth/
+	STATUS=$?
+done
 
 /opt/keycloak/bin/kcadm.sh config credentials --server http://localhost:$HTTP_PORT/auth \
 	--realm master --user $ADMIN_USER --password $ADMIN_PW
